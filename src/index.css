@@ -56,14 +56,14 @@
     --color-primary: #F58A07;
     --color-secondary: #1D3444;
     --color-tertiary: #5B5B5B;
-    --color-primary-hover: #F2C79B;
+    --color-light-blue: #DCEAF5;
     --color-nav-link: #394149;
     --color-grey: #F5F2F0;
 }
 
 body {
     font-family: "Poppins", sans-serif;
-    @apply text-tertiary;
+    @apply text-tertiary text-paragraph;
 }
 
 @layer components {
@@ -110,7 +110,7 @@ body {
         font-weight: 600;
 
         @variant hover {
-            background-color: var(--color-primary-hover);
+            @apply bg-primary/80;
         }
     }
 
