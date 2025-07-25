@@ -75,7 +75,7 @@ body {
     .main-box {
         position: relative;
         padding: 0 24px;
-        max-width: 1500px;
+        max-width: 1920px;
         width: 100%;
         margin: 0 auto;
     }
@@ -115,19 +115,26 @@ body {
     }
 
     .button-secondary {
-        background: var(--color-primary)/10;
-        border-radius: var(--radius-lg);
-        padding: 18px 32px;
+        @apply bg-primary/10;
+        border-radius: 31px;
+        padding: 8px 16px;
 
         text-align: center;
-        font-size: var(--text-paragraph);
+        font-size: 16px;
         line-height: 1.065;
         color: var(--color-primary);
         letter-spacing: var(--tracking-normal);
+        text-wrap: nowrap;
 
         @variant hover {
             background: var(--color-primary);
             color: var(--color-white);
+            
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding: 18px 32px;
+            font-size: var(--text-paragraph);
         }
     }
 }
@@ -141,7 +148,7 @@ body {
 }
 
 .page-numbers.current {
-  @apply bg-primary border-primary cursor-default font-700;
+  @apply bg-primary border-primary cursor-default font-bold;
 }
 
 ul.page-numbers {

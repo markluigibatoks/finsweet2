@@ -7,34 +7,35 @@
   </head>
   <body <?php body_class(); ?>>
     <header class="z-10 sticky top-0">
-      <div class="z-10 main-box bg-black">
+      <div class="z-10 main-box bg-white">
         <div class="wrapper">
-          <div class="py-3 lg:py-0 flex items-center justify-between">
+          <div class="py-4 flex items-center justify-between lg:justify-start">
             <a href="<?php echo site_url('/')?>">
               <div class="xl:pr-16 pr-6">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="logo" />
               </div>
             </a>
 
-            <nav class="hidden lg:block">
-                <ul class="flex gap-12">
+            <nav class="hidden lg:block lg:ml-auto">
+                <ul class="flex gap-8">
                     <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline <?php echo is_front_page() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Home</a>
+                      <a class="text-nav-link font-poppins font-semibold leading-6 hover:underline <?php echo is_page('about-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/about-us'); ?>">About Us</a>
                     </li>
                     <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">About Us</a>
+                      <a class="text-nav-link font-poppins font-semibold leading-6 hover:underline <?php echo is_page('careers') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/careers'); ?>">Careers</a>
                     </li>
                     <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">Services</a>
+                      <a class="text-nav-link font-poppins font-semibold leading-6 hover:underline <?php echo is_page('services') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/services'); ?>">Services</a>
                     </li>
                     <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">Blog</a>
+                      <a class="text-nav-link font-poppins font-semibold leading-6 hover:underline <?php echo is_home() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/blog'); ?>">Blog</a>
                     </li>
                     <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">Contact Us</a>
+                      <a class="text-nav-link font-poppins font-semibold leading-6 hover:underline <?php echo is_page('/contact-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/contact-us'); ?>">Contact Us</a>
                     </li>
                 </ul>
             </nav>
+            <a href="#" aria-label="dummy link" class="ml-auto lg:ml-10 button-secondary">Clone project</a>
             <?php get_template_part('/partials/drawer-toggle') ?>
           </div>
         </div>
