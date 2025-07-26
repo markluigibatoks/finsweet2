@@ -20,8 +20,12 @@
                 </div>
             </div>
 
-            <div class="order-1 lg:order-2 max-w-max mx-auto">
+            <div class="relative order-1 lg:order-2 max-w-max lg:mx-0 mx-auto">
                 <img class="rounded-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/main-img1.jpg" alt="finsweet2 ambassador"/>
+
+                <div class="absolute [@media(min-width:1500px)]:-top-[58px] top-2 right-2 [@media(min-width:1500px)]:-right-[58px] lg:top-5 lg:right-5 w-20 h-20 flex items-center justify-center lg:inline lg:w-full max-w-max">
+                    <?php echo file_get_contents(get_template_directory() . '/assets/images/front-page/main-icon1.svg'); ?>
+                </div>
             </div>
         </div>
     </div>
