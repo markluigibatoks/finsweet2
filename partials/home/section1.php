@@ -6,7 +6,7 @@
   ]);
 ?>
 
-<div class="main-box lg:pt-54 pt-10">
+<main class="main-box lg:pt-54 pt-10">
     <div class="wrapper">
         <div class="w-full text-center">
           <span class="text-label-2 uppercase">Our Blog</span>
@@ -40,4 +40,4 @@
           }
         ?>
     </div>
-</div>
+</main>
