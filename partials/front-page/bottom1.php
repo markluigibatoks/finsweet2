@@ -1,7 +1,11 @@
 <div class="main-box lg:pb-32 pb-10 bg-white">
     <div class="wrapper">
-        <div class="md:p-12 p-5 bg-light-blue rounded-[20px]">
-            <div class="overflow-auto flex gap-6 items-center">
+        <div class="relative md:p-12 p-5 bg-light-blue rounded-[20px]">
+            <div class="md:opacity-100 opacity-10 z-0 absolute -top-4 -right-4 max-w-max select-none">
+                <img class="object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom1-icon1.png" alt="ribbon"/>
+            </div>
+
+            <div class="z-10 relative overflow-auto flex gap-6 items-center">
                 <button type="button" class="button-tertiary cursor-pointer">Business strategy</button>
 
                 <button type="button" class="button-tertiary inactive cursor-pointer">Digitalization</button>
@@ -19,7 +23,7 @@
                     <a href="#" aria-label="dummy-link" class="md:mt-10 mt-5 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">See all services <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
                 </div>
 
-                <div class="lg:order-2 order-1 w-full max-w-max">
+                <div class="relative lg:order-2 order-1 w-full max-w-max">
                     <img class="rounded-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom1-img1.jpg" alt="people are brainstorming"/>
                 </div>
             </div>
