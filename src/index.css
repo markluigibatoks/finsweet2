@@ -109,9 +109,14 @@ body {
         white-space: nowrap;
         letter-spacing: var(--tracking-normal);
         font-weight: 600;
+        text-wrap: nowrap;
 
         @variant hover {
             @apply bg-primary/80;
+        }
+
+        @variant active {
+            @apply opacity-70;
         }
     }
 
@@ -133,9 +138,52 @@ body {
             
         }
 
+        @variant active {
+            @apply opacity-70;
+        }
+
         @media screen and (min-width: 1024px) {
             padding: 18px 32px;
             font-size: var(--text-paragraph);
+        }
+    }
+
+    .button-tertiary {
+        @apply bg-white;
+        border: 1px solid var(--color-white);
+        border-radius: 31px;
+        padding: 8px 24px;
+
+        color: var(--color-primary);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0;
+        text-wrap: nowrap;
+
+        @variant hover {
+            @apply opacity-90;
+        }
+
+        @variant active {
+            @apply opacity-70;
+        }
+    }
+
+    .button-tertiary.inactive {
+        @apply bg-transparent;
+        border: 1px solid #0632554D;
+        padding: 8px 24px;
+
+        color: #A8BCCC;
+
+        @variant hover {
+            @apply bg-white opacity-90 border-white;
+
+            color: var(--color-primary);
+        }
+
+        @variant active {
+            @apply opacity-70;
         }
     }
 }
