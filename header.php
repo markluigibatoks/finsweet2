@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="z-10 sticky top-0">
+    <header class="z-50 sticky top-0">
       <div class="z-10 main-box bg-white">
         <div class="wrapper">
           <div class="py-4 flex items-center justify-between lg:justify-start">
