@@ -1,71 +1,92 @@
-<footer class="main-box bg-black py-16">
+<footer class="main-box bg-dark-blue py-10 lg:py-20 text-white">
     <div class="wrapper">
-      <div id="footer-body" class="grid sm:grid-cols-2 lg:flex gap-5 gap-y-10">
-        <div class="text-white">
+      <div id="footer-body" class="grid sm:grid-cols-2 lg:flex justify-between gap-5 lg:gap-10 gap-y-10">
+        <div class="text-white lg:max-w-[351px]">
           <a id="footer-logo" href="<?php echo site_url('/')?>">
             <div class="xl:pr-16 pr-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="logo" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-2.svg" alt="logo" />
             </div>
           </a>
 
-          <div id="copyright" class="lg:text-left text-center mt-16 lg:mt-7 uppercase text-cap-2 text-white">
-            &copy; Copyright <a class="hover:underline" href="<?php echo site_url('/') ?>"><?php echo get_bloginfo(); ?></a> <?php echo date('Y')?>
-          </div>
+          <div class="mt-8">
+            <h2 class="xl:text-h3 text-h5">Bespoke software solutions</h2>
+            
+            <div class="mt-8 flex gap-4">
+              <a href="#" target="_blank" class="hover w-4 h-4 display flex items-center justify-center">
+                <?php echo inline_svg('/assets/images/facebook.svg'); ?>
+              </a>
 
-          <div class="text-cap-2 mt-8">
-            <a href="tel:(480) 555-0103" target="_blank" class="block hover:underline max-w-max">(480) 555-0103</a>
-            <address class="not-italic">4517 Washington Ave.</address>
-            <a href="mailto:boilerplate@example.com" target="_blank" class="block hover:underline max-w-max">boilerplate@example.com</a>
+              <a href="#" target="_blank" class="hover w-4 h-4 display flex items-center justify-center">
+                <?php echo inline_svg('/assets/images/youtube.svg'); ?>
+              </a>
+
+              <a href="#" target="_blank" class="hover w-4 h-4 display flex items-center justify-center">
+                <?php echo inline_svg('/assets/images/instagram.svg'); ?>
+              </a>
+
+              <a href="#" target="_blank" class="hover w-4 h-4 display flex items-center justify-center">
+                <?php echo inline_svg('/assets/images/twitter.svg'); ?>
+              </a>
+            </div>
+            
           </div>
         </div>
 
-        <div class="flex gap-18 lg:ml-auto">
+        <div class="flex gap-10 xl:gap-27">
           <div class="text-white">
-            <span>Quicklinks</span>
-            <ul class="mt-5 text-cap-2">
+            <span class="text-h6">Company</span>
+            <ul class="mt-6 text-cap-1 font-medium tracking-0">
               <li>
-                <a href="#" class="uppercase hover:underline max-w-max opacity-78">About Us</a>
+                <a href="#" class="hover:underline max-w-max">About Us</a>
               </li>
               <li class="mt-6">
-                <a href="#" class="uppercase hover:underline max-w-max opacity-78">Services</a>
+                <a href="#" class="hover:underline max-w-max">Services</a>
               </li>
               <li class="mt-6">
-                <a href="#" class="uppercase hover:underline max-w-max opacity-78">Events</a>
+                <a href="#" class="hover:underline max-w-max">Events</a>
               </li>
               <li class="mt-6">
-                <a href="#" class="uppercase hover:underline max-w-max opacity-78">Blog</a>
+                <a href="#" class="hover:underline max-w-max">Blog</a>
               </li>
             </ul>
           </div>
 
           <div class="text-white">
-            <span>Connect</span>
-            <div class="mt-5 flex gap-5">
-              <a href="#" target="_blank" class="hover:opacity-78 w-4 h-4 display flex items-center justify-center">
-                <?php echo inline_svg('/assets/images/facebook.svg'); ?>
-              </a>
+            <span class="text-h6">Connect</span>
+            
+            <a href="mailto:hi@finsweet.com" target="_blank" class="mt-6 text-cap-1 font-medium tracking-normal block hover:underline max-w-max">hi@finsweet.com</a>
 
-              <a href="#" target="_blank" class="hover:opacity-78 w-4 h-4 display flex items-center justify-center">
-                <?php echo inline_svg('/assets/images/facebook.svg'); ?>
-              </a>
-
-              <a href="#" target="_blank" class="hover:opacity-78 w-4 h-4 display flex items-center justify-center">
-                <?php echo inline_svg('/assets/images/facebook.svg'); ?>
-              </a>
-            </div>
+            <a href="tel:+1234567890" target="_blank" class="mt-4 text-cap-1 font-medium tracking-normal block hover:underline max-w-max">+(123) 456-7890</a>
           </div>
         </div>
 
-        <div class="col-span-full lg:ml-auto xl:ml-29 text-center lg:text-left">
-            <h2 class="text-h5 md:text-h4 mb-2 lg:mb-8 uppercase text-white">Subscribe to get Latest <span class="lg:block">Updates and News</span></h2>
+        <div class="sm:col-span-2 sm:justify-self-center lg:justify-self-start w-full max-w-[342px]">
+            <h2 class="text-h6">Join Newsletter</h2>
 
             <form method="POST" id="newsletter-form">
-              <div class="mx-auto lg:mx-0 flex lg:flex-row flex-col items-center gap-5 max-w-[512px] w-full relative">
-                <input type="email" name="email" placeholder="Yourmail@gmail.com" class="w-full border-white/15 border-1 lg:rounded-tl-xl lg:rounded-bl-xl lg:rounded-tr-[28px] lg:rounded-br-[28px] rounded-lg leading-16 lg:pl-5 lg:pr-55 px-5 text-white/80" />
-                <button type="submit" class="cursor-pointer lg:absolute lg:right-0 button-primary max-w-[201px] w-full">Subscribe</button>
+              <div class="mt-6 mx-auto lg:mx-0 flex flex-col gap-5 max-w-[512px] w-full relative">
+                <input type="email" name="email" placeholder="Type email here" class="w-full bg-white rounded-[31px] px-8 py-4 text-black" />
+                <button type="submit" class="cursor-pointer button-primary max-w-max">Subscribe</button>
               </div>
             </form>
         </div>
+      </div>
+
+      <div class="mt-20 flex sm:flex-row flex-col justify-between gap-5">
+          <div id="copyright" class="sm:order-1 order-2 text-cap-1 font-medium tracking-normal">
+              &copy; All rights reserved  <a class="hover:underline" href="<?php echo site_url('/') ?>"><?php echo get_bloginfo(); ?></a>
+          </div>
+          
+          <nav class="sm:order-2 order-1">
+            <ul class="text-cap-1 font-medium tracking-0 flex sm:flex-row flex-col lg:gap-8">
+              <li>
+                <a href="#" class="hover:underline max-w-max">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline max-w-max">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
       </div>
     </div>
 </footer>

@@ -7,5 +7,6 @@
     get_template_part("/partials/front-page/bottom1");
     get_template_part("/partials/front-page/bottom2");
     get_template_part("/partials/front-page/bottom3");
+    get_template_part("/partials/front-page/bottom4");
     get_footer();
 ?>
