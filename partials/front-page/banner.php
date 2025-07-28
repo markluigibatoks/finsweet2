@@ -1,4 +1,4 @@
-<div class="overflow-hidden main-box lg:pt-28 lg:pb-37 pt-20 bg-light-blue">
+<div class="overflow-hidden main-box lg:pt-28 lg:pb-37 md:pt-20 pt-10 bg-light-blue">
     <div class="wrapper">
         <div class="z-20 relative lg:max-w-[576px] w-full text-center lg:text-left">
             <h2 class="mb-4 lg:text-h1 md:text-h4 text-h5 text-secondary">Prosper with our bespoke solutions</h2>
