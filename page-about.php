@@ -9,10 +9,15 @@
     null,
     array(
       'image' => array(
-        'src' => get_template_directory_uri() . "/assets/images/about-us/placeholder.svg",
-        'alt' => "a place full of trees"
+        'src' => get_template_directory_uri() . "/assets/images/about-us/banner.jpg",
+        'alt' => "woman holding a clipboard"
       ),
-      'heading' => "Serving the world around us"
+      'heading' => "We value human, organizational, and operational intelligence, not just artificial",
+      'description' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.",
+      'link' => array(
+        'url' => '#',
+        'text' => "Work With Us"
+      )
     )
   );
 
