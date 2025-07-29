@@ -37,16 +37,16 @@
             <span class="text-h6">Company</span>
             <ul class="mt-6 text-cap-1 font-medium tracking-0">
               <li>
-                <a href="#" class="hover:underline max-w-max">About Us</a>
+                <a class="hover:underline max-w-max <?php echo is_page('about-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/about-us'); ?>">About Us</a>
               </li>
               <li class="mt-6">
-                <a href="#" class="hover:underline max-w-max">Services</a>
+                <a class="hover:underline max-w-max <?php echo is_page('careers') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/careers'); ?>">Careers</a>
               </li>
               <li class="mt-6">
-                <a href="#" class="hover:underline max-w-max">Events</a>
+                <a class="hover:underline max-w-max <?php echo is_page('services') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/services'); ?>">Services</a>
               </li>
               <li class="mt-6">
-                <a href="#" class="hover:underline max-w-max">Blog</a>
+                <a class="hover:underline max-w-max <?php echo is_home() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/blog'); ?>">Blog</a>
               </li>
             </ul>
           </div>
@@ -80,15 +80,19 @@
           <nav class="sm:order-2 order-1">
             <ul class="text-cap-1 font-medium tracking-0 flex sm:flex-row flex-col lg:gap-8">
               <li>
-                <a href="#" class="hover:underline max-w-max">Privacy Policy</a>
+                <a class="<?php echo is_page('privacy-policy') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/privacy-policy'); ?>" class="hover:underline max-w-max">Privacy Policy</a>
               </li>
               <li>
-                <a href="#" class="hover:underline max-w-max">Terms & Conditions</a>
+                <a class="<?php echo is_page('terms-and-conditions') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/terms-and-conditions'); ?>" class="hover:underline max-w-max">Terms & Conditions</a>
               </li>
             </ul>
           </nav>
       </div>
     </div>
+
+    <div class="2xl:w-13 w-2 h-36 bg-primary rounded-tr-[20px] absolute bottom-0 left-0"></div>
+
+    <div class="2xl:w-13 w-2 h-72 bg-primary rounded-l-[20px] absolute top-10 right-0"></div>
 </footer>
 
 <?php wp_footer(); ?>
