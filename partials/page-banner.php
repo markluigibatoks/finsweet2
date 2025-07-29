@@ -1,13 +1,15 @@
-<div class="main-box p-0 w-full h-full relative">
-  <img class="object-cover w-full h-full" src="<?php echo $args['image']['src']; ?>" alt="<?php echo $args['image']['alt'] ?>"/>
+<main class="main-box bg-white lg:py-27 py-10">
+    <div class="wrapper">
+      <div class="flex gap-10 items-center justify-between">
+        <div class="lg:max-w-[618px] w-full text-center lg:text-left">
+            <h2 class="text-secondary mb-5 lg:mb-6 xl:text-h1 lg:text-h2 md:text-h4 text-h5"><?php echo $args['heading']; ?></h2>
+            <p><?php echo $args['description']; ?></p>
+            <a href="<?php echo $args['link']['url']; ?>" class="block mt-8 max-w-max button-primary mx-auto lg:mx-0"><?php echo $args['link']['text']; ?></a>
+        </div>
 
-  <div class="main-box lg:absolute lg:left-0 lg:top-0 lg:h-full">
-      <div class="wrapper lg:flex lg:items-center lg:h-full">
-          <div>
-            <span class="uppercase font-bold"><?php echo get_the_title(); ?></span>
-            <h2 class="lg:mt-4 uppercase align-top lg:text-h2 md:text-h4 text-h5"><?php echo $args['heading']; ?></h2>
-          </div>
+        <div class="max-w-max mx-auto">
+          <img class="object-cover w-full h-full rounded-[20px]" src="<?php echo $args['image']['src']; ?>" alt="<?php echo $args['image']['alt']; ?>"/>
+        </div>
       </div>
-  </div>
-</div>
-
+    </div>
+</main>
