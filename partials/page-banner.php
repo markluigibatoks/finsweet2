@@ -7,7 +7,7 @@
             <a href="<?php echo $args['link']['url']; ?>" class="block mt-8 max-w-max button-primary mx-auto lg:mx-0"><?php echo $args['link']['text']; ?></a>
         </div>
 
-        <div class="lg:order-2 order-1 max-w-max mx-auto">
+        <div class="lg:order-2 order-1  max-w-max sm:max-w-[50%] lg:max-w-max mx-auto">
           <img class="object-cover w-full h-full rounded-[20px]" src="<?php echo $args['image']['src']; ?>" alt="<?php echo $args['image']['alt']; ?>"/>
         </div>
       </div>
