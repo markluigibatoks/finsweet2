@@ -80,10 +80,10 @@
           <nav class="sm:order-2 order-1">
             <ul class="text-cap-1 font-medium tracking-0 flex sm:flex-row flex-col lg:gap-8">
               <li>
-                <a class="<?php echo is_page('privacy-policy') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/privacy-policy'); ?>" class="hover:underline max-w-max">Privacy Policy</a>
+                <a class="hover:underline max-w-max <?php echo is_page('privacy-policy') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/privacy-policy'); ?>">Privacy Policy</a>
               </li>
               <li>
-                <a class="<?php echo is_page('terms-and-conditions') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/terms-and-conditions'); ?>" class="hover:underline max-w-max">Terms & Conditions</a>
+                <a class="hover:underline max-w-max <?php echo is_page('terms-and-conditions') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/terms-and-conditions'); ?>">Terms & Conditions</a>
               </li>
             </ul>
           </nav>
