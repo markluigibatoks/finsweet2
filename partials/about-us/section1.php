@@ -1,4 +1,4 @@
-<div class="main-box lg:py-32 py-10">
+<div class="main-box">
     <div class="wrapper">
         <div class="lg:flex justify-between gap-10 w-full text-center lg:text-left">
             <h2 class="text-secondary lg:max-w-[584px] text-h3 md:text-h4 text-h5">The energy of a start-up combined with 30 years of experience</h2>
