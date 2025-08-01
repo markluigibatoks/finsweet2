@@ -20,7 +20,7 @@
                     <br />
                     Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque.
                     </p>
-                    <a href="#" aria-label="dummy-link" class="md:mt-10 mt-5 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">See all services <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+                    <a href="<?php echo site_url('/services'); ?>" class="md:mt-10 mt-5 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">See all services <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
                 </div>
 
                 <div class="relative lg:order-2 order-1 w-full max-w-max">

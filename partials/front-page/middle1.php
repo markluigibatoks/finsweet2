@@ -12,7 +12,7 @@
                 </div>
                 <h2 class="md:text-h4 text-h5 lg:text-paragraph-large leading-[1.065] mt-8 lg:mb-4">Business strategy</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
-                <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+                <a href="<?php echo site_url('/services')?>" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
             </div>
 
             <div class="w-full text-center lg:text-left md:max-w-[500px] lg:max-w-full">
@@ -21,7 +21,7 @@
                 </div>
                 <h2 class="md:text-h4 text-h5 lg:text-paragraph-large leading-[1.065] mt-8 lg:mb-4">Digitalization</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
-                <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+                <a href="<?php echo site_url('/services')?>" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
             </div>
 
             <div class="lg:col-span-1 md:col-span-2 justify-self-center w-full text-center lg:text-left md:max-w-[500px] lg:max-w-full">
@@ -30,7 +30,7 @@
                 </div>
                 <h2 class="md:text-h4 text-h5 lg:text-paragraph-large leading-[1.065] mt-8 lg:mb-4">Risk assessment</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
-                <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+                <a href="<?php echo site_url('/services')?>" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
             </div>
         </div>
     </div>
