@@ -1,43 +1,73 @@
-<div class="main-box lg:py-32 py-10">
+<div class="main-box bg-white lg:py-24 py-10">
     <div class="wrapper">
-        <div class="w-full text-center">
-          <h2 class="lg:text-h2 md:text-h4 text-h5 uppercase">All Blog Posts</h2>
+        <h2 class="text-light-black lg:text-h2 md:text-h4 text-h5 lg:text-left text-center">Latest Blog & News</h2>
 
-          <div class="lg:mt-16 mt-5 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <?php
-              $flag = true;
-              while(have_posts()) {
-                the_post();
-            ?>
-            
-            <div class="<?php echo $flag ? 'px-8 pt-12 pb-8 border-primary border-b-16' : 'px-8 py-12'; ?> bg-white w-full text-center lg:text-left">
-              <span class="text-cap-3 text-gradient uppercase">Relationship</span>
-              <a href="<?php the_permalink(); ?>" class="hover:opacity-70">
-                <h2 class="mt-4 text-h5 mb-4 uppercase"><?php the_title(); ?></h2>
-              </a>
-              <p class="opacity-78"><?php echo wp_trim_words(get_the_excerpt(), 12); ?></p>
-
-              <span class="mt-12 block text-label-3">By <?php the_author(); ?></span>
-              <span><?php echo get_the_date('l j F, Y'); ?></span>
+        <div class="mt-10 lg:mt-16 grid grid-cols-1 gap-5 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center sm:place-items-start">
+          <div class="max-w-[400px] w-full text-center lg:text-left">
+            <div class="max-w-max w-full">
+              <img class="rounded-t-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom4-img1.jpg" alt="two people smiling"/>
             </div>
+            <div class="bg-light-blue rounded-b-[20px] p-5 lg:p-8">
+              <h2 class="mb-4 text-light-black text-h5 font-medium">Why you have to digitalize in 2021</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+              <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+            </div>
+          </div>
 
-            <?php
-              $flag = false;
-              wp_reset_postdata();
-              }
-            ?>
+          <div class="max-w-[400px] w-full text-center lg:text-left">
+            <div class="max-w-max w-full">
+              <img class="rounded-t-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom4-img2.jpg" alt="two people smiling"/>
+            </div>
+            <div class="bg-light-blue rounded-b-[20px] p-5 lg:p-8">
+              <h2 class="mb-4 text-light-black text-h5 font-medium">Why you have to digitalize in 2021</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+              <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+            </div>
+          </div>
+
+          <div class="col-span-1 sm:col-span-2 sm:justify-self-center lg:col-span-1 lg:justify-self-start max-w-[400px] w-full text-center lg:text-left">
+            <div class="max-w-max w-full">
+              <img class="rounded-t-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom4-img3.jpg" alt="two people smiling"/>
+            </div>
+            <div class="bg-light-blue rounded-b-[20px] p-5 lg:p-8">
+              <h2 class="mb-4 text-light-black text-h5 font-medium">Why you have to digitalize in 2021</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+              <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+            </div>
+          </div>
+
+          <div class="max-w-[400px] w-full text-center lg:text-left">
+            <div class="max-w-max w-full">
+              <img class="rounded-t-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom4-img1.jpg" alt="two people smiling"/>
+            </div>
+            <div class="bg-light-blue rounded-b-[20px] p-5 lg:p-8">
+              <h2 class="mb-4 text-light-black text-h5 font-medium">Why you have to digitalize in 2021</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+              <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+            </div>
+          </div>
+
+          <div class="max-w-[400px] w-full text-center lg:text-left">
+            <div class="max-w-max w-full">
+              <img class="rounded-t-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom4-img2.jpg" alt="two people smiling"/>
+            </div>
+            <div class="bg-light-blue rounded-b-[20px] p-5 lg:p-8">
+              <h2 class="mb-4 text-light-black text-h5 font-medium">Why you have to digitalize in 2021</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+              <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+            </div>
+          </div>
+
+          <div class="col-span-1 sm:col-span-2 sm:justify-self-center lg:col-span-1 lg:justify-self-start max-w-[400px] w-full text-center lg:text-left">
+            <div class="max-w-max w-full">
+              <img class="rounded-t-[20px] object-cover w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/bottom4-img3.jpg" alt="two people smiling"/>
+            </div>
+            <div class="bg-light-blue rounded-b-[20px] p-5 lg:p-8">
+              <h2 class="mb-4 text-light-black text-h5 font-medium">Why you have to digitalize in 2021</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+              <a href="#" aria-label="dummy-link" class="mt-6 text-primary hover:underline max-w-max mx-auto lg:mx-0 flex gap-2 items-center">Learn More <span class="flex items-center justify-center"><?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?> </span></a>
+            </div>
           </div>
         </div>
-
-        <div class="pagination">
-        <?php
-          echo paginate_links(array(
-              'mid_size'  => 2,
-              'prev_text' => __('« Previous'),
-              'next_text' => __('Next »'),
-              'type' => 'list'
-          ));
-          ?>
-      </div>
     </div>
 </div>
