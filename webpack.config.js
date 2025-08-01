@@ -12,5 +12,6 @@ module.exports = {
   resolve: {
     extensions: ['.js']
   },
-  mode: 'production' // or 'production'
+  mode: 'production', // or 'production'
+  devtool: false,
 };
