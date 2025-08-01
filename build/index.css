@@ -17,6 +17,8 @@
     --spacing: 0.25rem;
     --container-4xl: 56rem;
     --container-7xl: 80rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
@@ -820,6 +822,9 @@
   .-mr-2 {
     margin-right: calc(var(--spacing) * -2);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -1073,6 +1078,12 @@
   .bg-\[\#252525E6\] {
     background-color: #252525E6;
   }
+  .bg-\[\#C1E4FF4D\] {
+    background-color: #C1E4FF4D;
+  }
+  .bg-\[\#C1E4FF\] {
+    background-color: #C1E4FF;
+  }
   .bg-dark-blue {
     background-color: var(--color-dark-blue);
   }
@@ -1118,11 +1129,17 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -1181,6 +1198,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-h6 {
     font-size: var(--text-h6);
     letter-spacing: var(--tw-tracking, var(--text-h6--letter-spacing));
@@ -1227,6 +1248,14 @@
     --tw-leading: 16px;
     line-height: 16px;
   }
+  .leading-\[28px\] {
+    --tw-leading: 28px;
+    line-height: 28px;
+  }
+  .leading-\[30px\] {
+    --tw-leading: 30px;
+    line-height: 30px;
+  }
   .leading-\[32px\] {
     --tw-leading: 32px;
     line-height: 32px;
@@ -1242,6 +1271,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .-tracking-\[0\.72\] {
+    --tw-tracking: calc(0.72 * -1);
+    letter-spacing: calc(0.72 * -1);
   }
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
