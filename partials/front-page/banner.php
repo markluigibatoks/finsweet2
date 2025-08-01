@@ -8,7 +8,7 @@
                 <a href="/services" class="text-secondary font-semibold hover:underline">See All Services</a>
             </div>
             
-            <p class="mt-14 mb-4 text-[#394149] opacity-50">Worked with 100+ Companiess</p>
+            <p class="mt-14 mb-4 text-[#394149] opacity-50">Worked with 100+ Companies</p>
             <div class="flex gap-5 lg:gap-12 items-center justify-center lg:justify-start">
                 <div class="max-w-max">
                     <img class="w-full h-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/banner-img1.png" alt="logo"/>
