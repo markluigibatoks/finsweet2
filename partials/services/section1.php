@@ -1,4 +1,4 @@
-<main class="main-box bg-white lg:pt-0 py-10">
+<div class="main-box bg-white lg:pt-0 py-10">
     <div class="wrapper">
         <div class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-x-10 xl:gap-x-20 md:gap-y-20 lg:gap-y-32 items-center">
           <div class="relative md:order-1 mb-10 md:my-0 max-w-max mx-auto">
@@ -78,4 +78,4 @@
           </div>
         </div>
     </div>
-</main>
+</div>

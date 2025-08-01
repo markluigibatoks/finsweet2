@@ -1,4 +1,4 @@
-<main class="main-box bg-white lg:pb-32 pb-10">
+<div class="main-box bg-white lg:pb-32 pb-10">
     <div class="wrapper">
         <h2 class="text-center lg:text-left lg:text-h2 md:text-h4 text-h5 text-secondary">See our open positions </h2>
         <div class="lg:mt-16 mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
@@ -33,4 +33,4 @@
           </div>
         </div>
     </div>
-</main>
+</div>
