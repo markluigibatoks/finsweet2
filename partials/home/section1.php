@@ -12,7 +12,7 @@
         <div class="lg:order-1 order-2 lg:max-w-[527px] w-full text-center lg:text-left">
             <h2 class="text-secondary mb-5 lg:mb-6 xl:text-h1 lg:text-h2 md:text-h4 text-h5"><?php echo get_the_title(); ?></h2>
             <p><?php echo wp_trim_words(get_the_excerpt(), 37); ?></p>
-            <a href="#" class="flex gap-2 items-center mt-8 max-w-max mx-auto lg:mx-0 text-primary hover:underline">
+            <a href="<?php echo get_the_permalink(); ?>" class="flex gap-2 items-center mt-8 max-w-max mx-auto lg:mx-0 text-primary hover:underline">
               Read More
               <span class="flex items-center justify-center">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/arrow-right.svg'); ?>
